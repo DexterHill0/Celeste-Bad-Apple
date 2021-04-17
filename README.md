@@ -4,7 +4,7 @@ Must have Python 3 installed and the following libraries installed:
 
 `opencv-python, imageio, numpy`
 
-You must also have Everest installed (and [LuaCutscenes](https://gamebanana.com/gamefiles/10788) if you intend on running the script instead of downloading the map)
+You must also have Everest installed and [LuaCutscenes](https://gamebanana.com/gamefiles/10788) installed.
 
 ##### `badapple.py`
 
@@ -15,7 +15,7 @@ You must also have Everest installed (and [LuaCutscenes](https://gamebanana.com/
 * `--name` / `-n` Name of output map
 * `--celeste` / `-c` The path to your Celeste install
 
--- precompiled map stuff
+To use the `bad_apple.bin` map, simply add it to `<path_to_celeste/Mods/bad_apple.bin`. Run Everest and enable debug mode. Navigate to debug maps and open the map.
 
 Every frame is made up of background tiles and your camera's X position is incremented to show each frame one after the other with a delay in between.  
 

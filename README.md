@@ -15,7 +15,7 @@ You must also have Everest installed and [LuaCutscenes](https://gamebanana.com/g
 * `--name` / `-n` Name of output map
 * `--celeste` / `-c` The path to your Celeste install
 
-To use the `bad_apple.bin` map, simply add it to `<path_to_celeste/Mods/bad_apple.bin`. Run Everest and enable debug mode. Navigate to debug maps and open the map.
+To use the `BadApple.zip` map, extracts the contents and move `bad_apple.bin` to to `<path_to_celeste/Mods/`. Move `cutscenes/cutscene.lua` into `<path_to_celeste/Mods/cutscenes/`. Run Everest and enable debug mode. Navigate to debug maps and open the map. Walk slightly right to hit the trigger.
 
 Every frame is made up of background tiles and your camera's X position is incremented to show each frame one after the other with a delay in between.  
 

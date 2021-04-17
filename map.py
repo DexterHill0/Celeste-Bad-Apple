@@ -5,8 +5,6 @@
 import struct
 import math
 
-import h5py
-
 import numpy as np
 
 

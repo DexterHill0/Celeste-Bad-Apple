@@ -45,8 +45,6 @@ def create_map():
 
     room.add_triggers(map.Trigger("luaCutscenes/luaCutsceneTrigger",
                                   {"x": 3, "y": h - 6, "width": 40, "height": 40, "filename": "cutscene", "unskippable": True}, map.Entity.count))
-    room.add_triggers(map.Trigger("eventTrigger", {
-                      "x": 50, "y": 50, "width": 40, "height": 40}, map.Entity.count))
 
     folder = path / Path("cutscenes")
     folder.mkdir(parents=True, exists_ok=True)
@@ -93,7 +91,6 @@ local cam = getRoom().Camera""")
 
                 if(v >= 127):
                     b[origin[0]][origin[1]] = "b"
-                    #f[origin[0]][origin[1]] = "m"
                 else:
                     b[origin[0]][origin[1]] = 1
 
@@ -108,7 +105,6 @@ local cam = getRoom().Camera""")
     end
 end""".format(x=w * 8, step=((args.w + offset) * 8), delay=delay))
 
-    # room.add_tiles(map.Tiles(f))
     room.add_tiles(b, "bg")
 
     world.add_room(room)
